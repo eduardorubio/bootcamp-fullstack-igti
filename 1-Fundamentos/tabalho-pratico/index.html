@@ -4,32 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fundamentos - Trabalho Prático</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Seletor RGB</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-    <h1>Trabalho Prático</h1>
+    <h1>Seletor RGB</h1>
     <div class="container">
         <div class="flex-row">
-            <label>(R) Vermelho</label>
-            <input type="range" />
-            <input type="text" disabled />
+            <label for="rangeRed">(R) Vermelho</label>
+            <input type="range" id="rangeRed" min="0" max="255" />
+            <input type="text" disabled id="textRed" />
         </div>
         <div class="flex-row">
-            <label>(G) Verde</label>
-            <input type="range" />
-            <input type="text" disabled />
+            <label for="rangeGreen">(G) Verde</label>
+            <input type="range" id="rangeGreen" min="0" max="255" />
+            <input type="text" disabled id="textGreen" />
         </div>
         <div class="flex-row">
-            <label>(B) Azul</label>
-            <input type="range" />
-            <input type="text" disabled />
+            <label for="rangeBlue">(B) Azul</label>
+            <input type="range" id="rangeBlue" min="0" max="255" />
+            <input type="text" disabled id="textBlue" />
         </div>
-        <div class="flex-row color-result">
+        <div class="flex-row rgb-result">
 
         </div>
     </div>
+    <script src="./assets/js/scripts.js"></script>
 </body>
 
 </html>
